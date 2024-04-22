@@ -1,18 +1,18 @@
 package ArrayUtil;
 public class ArrayUtil {
     public static int[] sliceArray(int[] array, int startIndex, int endIndex) {
-        // Check for valid input indices
+        
         if (startIndex < 0 || endIndex >= array.length || startIndex > endIndex) {
-            return new int[0]; // Return an empty array if indices are invalid
+            return new int[0]; 
         }
 
-        // Calculate the length of the new array
+        
         int length = endIndex - startIndex + 1;
 
-        // Create a new array to store the sliced elements
+        
         int[] slicedArray = new int[length];
 
-        // Copy the elements from the original array to the sliced array
+        
         for (int i = 0; i < length; i++) {
             slicedArray[i] = array[startIndex + i];
         }
@@ -27,7 +27,7 @@ public class ArrayUtil {
 
         int[] slicedArray = sliceArray(array, startIndex, endIndex);
 
-        // Print the sliced array
+        
         System.out.print("Sliced Array: ");
         for (int num : slicedArray) {
             System.out.print(num + " ");
