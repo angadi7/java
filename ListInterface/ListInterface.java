@@ -17,7 +17,7 @@ public class ListInterface {
         System.out.println("Original list: " + list);
 
         for (int i = list.size() - 1; i >= 0; i--) {
-            if (i % 2!= 0) { // Change condition to remove odd-indexed elements
+            if (i % 2!= 0) { 
                 String removedStr = list.remove(i);
                 System.out.println("Removed element: " + removedStr);
             }
