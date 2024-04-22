@@ -6,9 +6,9 @@ public class LinearSearch7b {
 
     public static void main(String[] args) {
 
-        int[] array = {5, 12, 55, 1, 13, 45};// Example array
+        int[] array = {5, 12, 55, 1, 13, 45};
 
-        int search = 13;// Element to search for
+        int search = 13;
 
         int index = searchElement(array, search);
 
@@ -28,12 +28,10 @@ public class LinearSearch7b {
 
                 return  i;
 
-            }// Return index if search is found
-
+            }
         }
 
-        return -1; // Return -1 if search is not found
-
+        return -1; 
     }
 
 }
