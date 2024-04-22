@@ -28,23 +28,20 @@ public class TwoSum {
 
             for (j = i + 1; j < a.length; j++) { 
 
-                int sum = a[i] + a[j]; // Calculating sum of current pair of elements
-
-                if (targetSum == sum) { // Check if sum equals the target sum
+                int sum = a[i] + a[j]; 
+                if (targetSum == sum) { 
 
                 	
 
-                	 System.out.println("Pair: " + a[i] + " + " + a[j]); // Printing the pair of numbers
-
+                	 System.out.println("Pair: " + a[i] + " + " + a[j]); 
                 	 
 
-                    System.out.println("Target value is: " + targetSum); // Printing the target value
-
+                    System.out.println("Target value is: " + targetSum); 
                   
 
                     found = true; 
 
-                    break; // Exit the inner loop
+                    break; 
 
                 }
 
@@ -56,7 +53,7 @@ public class TwoSum {
 
         
 
-        if (!found) { // If pair not found
+        if (!found) { 
 
             System.out.println("No pair found that sums up to the target value."); 
 
