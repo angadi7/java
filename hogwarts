@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the official Hogwarts School of Witchcraft and Wizardry website. Discover everything about the magical school, its houses, faculty, and how to contact us.">
+    <meta name="keywords" content="Hogwarts, Witchcraft, Wizardry, Harry Potter, Magic School">
+    <meta name="author" content="J.K. Rowling">
+    <title>Hogwarts School of Witchcraft and Wizardry</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="hogwarts_logo.png" alt="Hogwarts Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#houses">Houses</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Welcome to Hogwarts</h2>
+            <p>Welcome to the official website of Hogwarts School of Witchcraft and Wizardry. Discover the magic!</p>
+            <button onclick="window.location.href='#about'">Learn More</button>
+        </section>
+        
+        <section id="about">
+            <h2>About Hogwarts</h2>
+            <p>Hogwarts School of Witchcraft and Wizardry is a fictional British school of magic for students aged eleven to eighteen. It is the primary setting for the first six books in J.K. Rowling's Harry Potter series.</p>
+            <article>
+                <h3>History</h3>
+                <p>Founded over a thousand years ago, Hogwarts has a rich history and has produced many notable witches and wizards.</p>
+            </article>
+            <article>
+                <h3>Location</h3>
+                <p>Located in the Scottish Highlands, Hogwarts is a magical and secluded place, hidden from the Muggle world.</p>
+            </article>
+        </section>
+        
+        <section id="houses">
+            <h2>Houses of Hogwarts</h2>
+            <p>Hogwarts houses are the living and learning communities for students. Each house has its own unique history and values.</p>
+            <ul>
+                <li><strong>Gryffindor</strong>: Known for bravery and daring.</li>
+                <li><strong>Hufflepuff</strong>: Known for loyalty and hard work.</li>
+                <li><strong>Ravenclaw</strong>: Known for wisdom and learning.</li>
+                <li><strong>Slytherin</strong>: Known for ambition and cunning.</li>
+            </ul>
+        </section>
+        
+        <section id="faculty">
+            <h2>Faculty</h2>
+            <p>Meet the esteemed faculty members of Hogwarts who are dedicated to teaching and nurturing young witches and wizards.</p>
+            <div class="faculty-list">
+                <article>
+                    <h3>Albus Dumbledore</h3>
+                    <p>Headmaster and one of the most powerful wizards of all time.</p>
+                </article>
+                <article>
+                    <h3>Minerva McGonagall</h3>
+                    <p>Deputy Headmistress and Transfiguration professor.</p>
+                </article>
+                <article>
+                    <h3>Severus Snape</h3>
+                    <p>Potion Master and Head of Slytherin House.</p>
+                </article>
+                <!-- Add more faculty members as needed -->
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <aside>
+        <h2>Latest News</h2>
+        <p>Stay tuned for the latest news and updates from Hogwarts.</p>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2024 Hogwarts School of Witchcraft and Wizardry. All rights reserved.</p>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+  ---------------------------------------------------------------------------------------------------------------
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #4b2e83;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 150px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    animation: slideIn 1s ease-in-out;
+}
+
+h2 {
+    color: #4b2e83;
+}
+
+button {
+    background-color: #4b2e83;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3a2162;
+}
+
+footer {
+    background-color: #4b2e83;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    display: block;
+    margin-top: 10px;
+}
+
+aside {
+    background-color: #e2e2e2;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.faculty-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.faculty-list article {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+------------------------------------------------------------------------
+
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Form submission handling
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Thank you for contacting us, ' + form.name.value + '!');
+        form.reset();
+    });
+
+    // Add scroll animations
+    const sections = document.querySelectorAll('section');
+    const options = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
+
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+});
+    
